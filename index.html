@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sledování krevního tlaku</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon"></script>
+    <style>
+        body { font-family: sans-serif; margin: 20px; background-color: #f4f7f6; }
+        .container { max-width: 1000px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #333; }
+        #chart-wrapper { position: relative; height: 500px; width: 100%; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Historie měření krevního tlaku</h1>
+    <div id="chart-wrapper">
+        <canvas id="bpChart"></canvas>
+    </div>
+</div>
+
+<script>
+    async function fetchAndRenderChart() {
+        try {
+            // 1. Načtení JSON dat
+            const response = await fetch('mereni_tlaku_graf.json');
+            const data = await response.json();
+            const measurements = data.measurements;
+
+            // 2. Příprava datových řad
+            const dates = measurements.map(m => m.date);
+            const systolic = measurements.map(m => ({ x: m.date, y: m.bp_systolic }));
+            const diastolic = measurements.map(m => ({ x: m.date, y: m.bp_diastolic }));
+            const pulse = measurements.map(m => ({ x: m.date, y: m.pulse }));
+
+            // 3. Konfigurace grafu
+            const ctx = document.getElementById('bpChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    datasets: [
+                        {
+                            label: 'Systolický (mmHg)',
+                            data: systolic,
+                            borderColor: 'rgb(255, 99, 132)',
+                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                            tension: 0.3,
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'Diastolický (mmHg)',
+                            data: diastolic,
+                            borderColor: 'rgb(54, 162, 235)',
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            tension: 0.3,
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'Tep (1/min)',
+                            data: pulse,
+                            borderColor: 'rgb(75, 192, 192)',
+                            borderDash: [5, 5],
+                            pointStyle: 'circle',
+                            fill: false,
+                            tension: 0.1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            type: 'time',
+                            time: {
+                                unit: 'month',
+                                displayFormats: { month: 'MM/yyyy' }
+                            },
+                            title: { display: true, text: 'Datum měření' }
+                        },
+                        y: {
+                            beginAtZero: false,
+                            suggestedMin: 60,
+                            title: { display: true, text: 'Hodnota' }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        legend: { position: 'top' }
+                    }
+                }
+            });
+        } catch (error) {
+            console.error('Chyba při načítání dat:', error);
+            document.body.innerHTML += '<p style="color:red; text-align:center;">Nepodařilo se načíst data. Ujistěte se, že JSON soubor je ve stejné složce a používáte lokální server.</p>';
+        }
+    }
+
+    fetchAndRenderChart();
+</script>
+
+</body>
+</html>
