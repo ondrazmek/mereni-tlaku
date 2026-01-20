@@ -1,0 +1,403 @@
+{
+  "schema": {
+    "date": "YYYY-MM-DD",
+    "bp_systolic": "mmHg",
+    "bp_diastolic": "mmHg",
+    "pulse": "1/s",
+    "weight_kg": "kg"
+  },
+  "measurements": [
+    {
+      "date": "2010-06-24",
+      "bp_systolic": 144,
+      "bp_diastolic": 100,
+      "pulse": 100,
+      "weight_kg": 72
+    },
+    {
+      "date": "2010-10-05",
+      "bp_systolic": 150,
+      "bp_diastolic": 90,
+      "pulse": 80,
+      "weight_kg": 74
+    },
+    {
+      "date": "2011-01-10",
+      "bp_systolic": 169,
+      "bp_diastolic": 84,
+      "pulse": 82,
+      "weight_kg": 74
+    },
+    {
+      "date": "2011-05-12",
+      "bp_systolic": 162,
+      "bp_diastolic": 90,
+      "pulse": 89,
+      "weight_kg": 72
+    },
+    {
+      "date": "2011-08-08",
+      "bp_systolic": 160,
+      "bp_diastolic": 90,
+      "pulse": 89,
+      "weight_kg": 72
+    },
+    {
+      "date": "2011-11-23",
+      "bp_systolic": 162,
+      "bp_diastolic": 88,
+      "pulse": 88,
+      "weight_kg": 72
+    },
+    {
+      "date": "2012-02-15",
+      "bp_systolic": 154,
+      "bp_diastolic": 99,
+      "pulse": 77,
+      "weight_kg": 73
+    },
+    {
+      "date": "2012-05-17",
+      "bp_systolic": 155,
+      "bp_diastolic": 90,
+      "pulse": 74,
+      "weight_kg": 73
+    },
+    {
+      "date": "2012-08-21",
+      "bp_systolic": 145,
+      "bp_diastolic": 79,
+      "pulse": 82,
+      "weight_kg": 72
+    },
+    {
+      "date": "2012-11-28",
+      "bp_systolic": 150,
+      "bp_diastolic": 100,
+      "pulse": 80,
+      "weight_kg": 72
+    },
+    {
+      "date": "2013-02-22",
+      "bp_systolic": 143,
+      "bp_diastolic": 92,
+      "pulse": 71,
+      "weight_kg": 72
+    },
+    {
+      "date": "2013-05-16",
+      "bp_systolic": 150,
+      "bp_diastolic": 89,
+      "pulse": 78,
+      "weight_kg": 74
+    },
+    {
+      "date": "2013-09-03",
+      "bp_systolic": 143,
+      "bp_diastolic": 88,
+      "pulse": 82,
+      "weight_kg": 74
+    },
+    {
+      "date": "2013-12-10",
+      "bp_systolic": 133,
+      "bp_diastolic": 79,
+      "pulse": 75,
+      "weight_kg": 74
+    },
+    {
+      "date": "2014-03-12",
+      "bp_systolic": 152,
+      "bp_diastolic": 84,
+      "pulse": 81,
+      "weight_kg": 74
+    },
+    {
+      "date": "2014-06-12",
+      "bp_systolic": 140,
+      "bp_diastolic": 87,
+      "pulse": 85,
+      "weight_kg": 74
+    },
+    {
+      "date": "2014-09-16",
+      "bp_systolic": 132,
+      "bp_diastolic": 80,
+      "pulse": 78,
+      "weight_kg": 76
+    },
+    {
+      "date": "2014-12-10",
+      "bp_systolic": 130,
+      "bp_diastolic": 92,
+      "pulse": 86,
+      "weight_kg": 76
+    },
+    {
+      "date": "2015-03-17",
+      "bp_systolic": 155,
+      "bp_diastolic": 95,
+      "pulse": 95,
+      "weight_kg": 80
+    },
+    {
+      "date": "2015-06-16",
+      "bp_systolic": 128,
+      "bp_diastolic": 83,
+      "pulse": 84,
+      "weight_kg": 80
+    },
+    {
+      "date": "2015-09-16",
+      "bp_systolic": 137,
+      "bp_diastolic": 81,
+      "pulse": 79,
+      "weight_kg": 80
+    },
+    {
+      "date": "2015-12-16",
+      "bp_systolic": 135,
+      "bp_diastolic": 85,
+      "pulse": 79,
+      "weight_kg": 80
+    },
+    {
+      "date": "2016-03-15",
+      "bp_systolic": 141,
+      "bp_diastolic": 84,
+      "pulse": 89,
+      "weight_kg": 80
+    },
+    {
+      "date": "2016-07-13",
+      "bp_systolic": 128,
+      "bp_diastolic": 75,
+      "pulse": 91,
+      "weight_kg": 78
+    },
+    {
+      "date": "2016-10-12",
+      "bp_systolic": 144,
+      "bp_diastolic": 79,
+      "pulse": 81,
+      "weight_kg": 78
+    },
+    {
+      "date": "2017-01-11",
+      "bp_systolic": 117,
+      "bp_diastolic": 76,
+      "pulse": 80,
+      "weight_kg": 75
+    },
+    {
+      "date": "2017-04-06",
+      "bp_systolic": 121,
+      "bp_diastolic": 79,
+      "pulse": 76,
+      "weight_kg": 75
+    },
+    {
+      "date": "2017-07-13",
+      "bp_systolic": 138,
+      "bp_diastolic": 83,
+      "pulse": 80,
+      "weight_kg": 75
+    },
+    {
+      "date": "2017-10-25",
+      "bp_systolic": 138,
+      "bp_diastolic": 85,
+      "pulse": 85,
+      "weight_kg": 80
+    },
+    {
+      "date": "2018-01-18",
+      "bp_systolic": 156,
+      "bp_diastolic": 81,
+      "pulse": 91,
+      "weight_kg": 80
+    },
+    {
+      "date": "2018-05-09",
+      "bp_systolic": 150,
+      "bp_diastolic": 78,
+      "pulse": 78,
+      "weight_kg": 80
+    },
+    {
+      "date": "2018-08-22",
+      "bp_systolic": 139,
+      "bp_diastolic": 97,
+      "pulse": 88,
+      "weight_kg": 84
+    },
+    {
+      "date": "2018-11-28",
+      "bp_systolic": 135,
+      "bp_diastolic": 85,
+      "pulse": 88,
+      "weight_kg": 84
+    },
+    {
+      "date": "2019-03-19",
+      "bp_systolic": 136,
+      "bp_diastolic": 86,
+      "pulse": 82,
+      "weight_kg": 85
+    },
+    {
+      "date": "2019-09-30",
+      "bp_systolic": 148,
+      "bp_diastolic": 101,
+      "pulse": 94,
+      "weight_kg": 85
+    },
+    {
+      "date": "2020-02-10",
+      "bp_systolic": 148,
+      "bp_diastolic": 86,
+      "pulse": 77,
+      "weight_kg": 85
+    },
+    {
+      "date": "2020-05-12",
+      "bp_systolic": 134,
+      "bp_diastolic": 84,
+      "pulse": 93,
+      "weight_kg": 85
+    },
+    {
+      "date": "2020-08-11",
+      "bp_systolic": 153,
+      "bp_diastolic": 90,
+      "pulse": 91,
+      "weight_kg": 85
+    },
+    {
+      "date": "2020-12-15",
+      "bp_systolic": 139,
+      "bp_diastolic": 87,
+      "pulse": 81,
+      "weight_kg": 79
+    },
+    {
+      "date": "2021-03-17",
+      "bp_systolic": 143,
+      "bp_diastolic": 89,
+      "pulse": 92,
+      "weight_kg": 80
+    },
+    {
+      "date": "2021-06-21",
+      "bp_systolic": 137,
+      "bp_diastolic": 91,
+      "pulse": 84,
+      "weight_kg": 82
+    },
+    {
+      "date": "2021-10-05",
+      "bp_systolic": 127,
+      "bp_diastolic": 84,
+      "pulse": 83,
+      "weight_kg": 83
+    },
+    {
+      "date": "2022-01-21",
+      "bp_systolic": 152,
+      "bp_diastolic": 96,
+      "pulse": 91,
+      "weight_kg": 83
+    },
+    {
+      "date": "2022-05-10",
+      "bp_systolic": 152,
+      "bp_diastolic": 102,
+      "pulse": 82,
+      "weight_kg": 83
+    },
+    {
+      "date": "2022-09-07",
+      "bp_systolic": 162,
+      "bp_diastolic": 81,
+      "pulse": 81,
+      "weight_kg": 83
+    },
+    {
+      "date": "2023-02-17",
+      "bp_systolic": 161,
+      "bp_diastolic": 85,
+      "pulse": 76,
+      "weight_kg": 83
+    },
+    {
+      "date": "2023-07-04",
+      "bp_systolic": 164,
+      "bp_diastolic": 94,
+      "pulse": 72,
+      "weight_kg": 83
+    },
+    {
+      "date": "2023-11-10",
+      "bp_systolic": 137,
+      "bp_diastolic": 97,
+      "pulse": 80,
+      "weight_kg": 86
+    },
+    {
+      "date": "2024-02-21",
+      "bp_systolic": 156,
+      "bp_diastolic": 92,
+      "pulse": 70,
+      "weight_kg": 86
+    },
+    {
+      "date": "2024-06-05",
+      "bp_systolic": 143,
+      "bp_diastolic": 86,
+      "pulse": 73,
+      "weight_kg": 86
+    },
+    {
+      "date": "2024-09-12",
+      "bp_systolic": 165,
+      "bp_diastolic": 81,
+      "pulse": 72,
+      "weight_kg": 86
+    },
+    {
+      "date": "2024-12-19",
+      "bp_systolic": 170,
+      "bp_diastolic": 84,
+      "pulse": 75,
+      "weight_kg": 86
+    },
+    {
+      "date": "2025-03-26",
+      "bp_systolic": 156,
+      "bp_diastolic": 91,
+      "pulse": 84,
+      "weight_kg": 86
+    },
+    {
+      "date": "2025-07-08",
+      "bp_systolic": 135,
+      "bp_diastolic": 90,
+      "pulse": 73,
+      "weight_kg": 86
+    },
+    {
+      "date": "2025-10-22",
+      "bp_systolic": 149,
+      "bp_diastolic": 95,
+      "pulse": 75,
+      "weight_kg": 86
+    },
+    {
+      "date": "2026-01-20",
+      "bp_systolic": 143,
+      "bp_diastolic": 97,
+      "pulse": 78,
+      "weight_kg": 86
+    }
+  ]
+}
